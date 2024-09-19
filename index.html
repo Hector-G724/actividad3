@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.26tY-h6gH9w.L.W.O/am=KBg/d=0/rs=AN8SPfrFqENNJiSriO76631eVsrfBUpwxg/m=el_main_css">
+
+</head>
+<body> 
+    
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Formulario de encuesta de freeCodeCamp</font></font></h1>
+          <p id="description" class="description text-center"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Gracias por tomarte el tiempo para ayudarnos a mejorar la plataforma.
+          </font></font></p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre</font></font></label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Introduce tu nombre" required="">
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Correo electrónico</font></font></label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa tu correo electrónico" required="">
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Edad</font></font><span class="clue"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(opcional)</font></font></span></label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Edad">
+          </div>
+          <div class="form-group">
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¿Qué opción describe mejor su función actual?</font></font></p>
+            <select id="dropdown" name="role" class="form-control" required="">
+              <option disabled="" selected="" value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Seleccionar rol actual</font></font></option>
+              <option value="student"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alumno</font></font></option>
+              <option value="job"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trabajo de tiempo completo</font></font></option>
+              <option value="learner"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estudiante a tiempo completo</font></font></option>
+              <option value="preferNo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Prefiero no decirlo</font></font></option>
+              <option value="other"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otro</font></font></option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¿Recomendarías freeCodeCamp a un amigo? </p>
+            <label>
+              <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Definitivamente</font></font></label>
+            <label>
+              <input name="user-recommend" value="maybe" type="radio" class="input-radio"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tal vez</font></font></label>
+  
+            <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">No estoy seguro</font></font></label>
+          </div>
+  
+          <div class="form-group">
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¿Cuál es tu característica favorita de freeCodeCamp?</font></font></p>
+            <select id="most-like" name="mostLike" class="form-control" required="">
+              <option disabled="" selected="" value=""> > Seleccione una opción </option>
+              <option value="challenges"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Desafíos</option>
+              <option value="projects"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Proyectos </option>
+              <option value="community"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comunidad </option>
+              <option value="openSource"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Código abierto</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              ¿Qué le gustaría que se mejorara?
+               </font></font><span class="clue"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Marque todas las opciones que correspondan)</font></font></span>
+            </p>
+  
+          
+
+            <label>
+              <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Proyectos back-end</font></font></label>
+            <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Visualización de datos</font></font></label>
+            <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Desafíos</font></font></label>
+            <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comunidad de código abierto</font></font></label>
+            <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Salas de ayuda de Gitter</font></font></label>
+            <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vídeos</font></font></label>
+            <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Encuentros en la ciudad</font></font></label>
+            <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Wiki</font></font></label>
+            <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Foro</font></font></label>
+            <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cursos adicionales</font></font></label>
+          </div>
+  
+          <div class="form-group">
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¿Algún comentario o sugerencia?</font></font></p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Introduce tu comentario aquí..."></textarea>
+          </div>
+  
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+              Entregar
+            </font></font></button>
+          </div>
+        </form>
+      </div>
+</body>
+
+
